@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Sales Arrays</title>
+    <script src="sales.js"></script>
+
+</head>
+<body>
+<main>
+    <h1>Sales Summary</h1>
+    
+    <script>
+		// Print the sales per quarter
+   		document.write("<h2>Sales by Quarter</h2>");
+   		document.write("Quarter 1: " + quarterSales(0) + "<br>" + "Quarter 2: " + quarterSales(1) + 
+   				"<br>" + "Quarter 3: " + quarterSales(2) + "<br>" + "Quarter 4: " + quarterSales(3));
+				   
+		
+		// Print the sales per region
+		document.write("<h2>Sales by Region</h2>");
+		document.write("Region 1: " + regionSales(region1) + "<br>" + "Region 2: " + 
+						regionSales(region2) + "<br>" + "Region 3: " + regionSales(region3) + 
+						"<br>" + "Region 4: " + regionSales(region4) + "<br>" + "Region 5: " + 
+						regionSales(region5));
+
+		// Print the total Sales
+		var region1Sales = regionSales(region1);
+		var region2Sales = regionSales(region2);
+		var region3Sales = regionSales(region3);
+		var region4Sales = regionSales(region4);
+		var region5Sales = regionSales(region5);
+		var totalRegionSales = region1Sales + region2Sales + region3Sales + region4Sales + region5Sales;
+		document.write("<h2>Total Sales</h2>");	
+		document.write("Total Sales: " + totalRegionSales);	   
+    </script>
+
+</main>
+</body>
+</html>
